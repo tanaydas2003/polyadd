@@ -14,9 +14,6 @@ struct node *insert(struct node* head, float co, int ex)
     newP->coeff = co; 
     newP->expo = ex; 
     newP->link = NULL;
-
-    //If there is no node in the list OR given exponent is 
-//than the first node exponent 
     if(head == NULL || ex > head->expo) 
     {
         newP->link = head; 
